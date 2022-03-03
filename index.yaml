@@ -1,0 +1,51 @@
+apiVersion: v1
+entries:
+  tl500-base:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-03-03T19:46:23.835881072+01:00"
+    dependencies:
+    - condition: sealed-secrets.enabled
+      name: sealed-secrets
+      repository: https://bitnami-labs.github.io/sealed-secrets
+      version: 1.16.1
+    - condition: stackrox.enabled
+      name: stackrox-chart
+      repository: https://redhat-cop.github.io/helm-charts
+      version: 0.0.3
+    - condition: gitops-operator.enabled
+      name: gitops-operator
+      repository: https://redhat-cop.github.io/helm-charts
+      version: 0.2.4
+    description: A Helm chart for Kubernetes
+    digest: 5c49b39cff4b069e5c633b30f93ec08a04631e0d03b4a625622a6df14cbd5996
+    maintainers:
+    - name: eformat
+    - name: tylerauerbeck
+    - name: jacobsee
+    - name: jtudelag
+    - name: ckavili
+    - name: springdo
+    name: tl500-base
+    type: application
+    urls:
+    - tl500-base-0.0.1.tgz
+    version: 0.0.1
+  tl500-course-content:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-03-03T19:46:23.83636277+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 050fa1572b2b5d0f4ae9daf1b03a6cd61066b899cdbbcc4c53d4c9bbdce87dee
+    maintainers:
+    - name: eformat
+    - name: jacobsee
+    - name: jtudelag
+    - name: ckavili
+    - name: springdo
+    name: tl500-course-content
+    type: application
+    urls:
+    - tl500-course-content-0.0.7.tgz
+    version: 0.0.7
+generated: "2022-03-03T19:46:23.833089398+01:00"
